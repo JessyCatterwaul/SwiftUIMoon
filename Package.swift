@@ -5,7 +5,9 @@ import PackageDescription
 _ = Package(
   name: .libraryName,
   platforms: [.iOS(.v18), .macOS(.v15)],
-  targets: [.target(name: .libraryName, resources: [.process("Moon.metal")])]
+  targets: [
+    .target(name: .libraryName, path: "", resources: [.process("Moon.metal")])
+  ],
 )
 
 extension String {
